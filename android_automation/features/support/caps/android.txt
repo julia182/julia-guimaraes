@@ -1,0 +1,13 @@
+[caps]
+platformName = "Android"
+deviceName = "android"
+automationName = "UiAutomator2"
+app = "../app/com.monefy.app.lite-1.14.0.apk"
+
+autoGrantPermissions = true
+newCommandTimeout = 99999
+adbExecTimeout = 99999
+
+fullReset = true
+
+appWaitForLaunch = true
