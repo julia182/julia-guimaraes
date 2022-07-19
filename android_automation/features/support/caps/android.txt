@@ -2,7 +2,7 @@
 platformName = "Android"
 deviceName = "android"
 automationName = "UiAutomator2"
-app = "../app/com.monefy.app.lite-1.14.0.apk"
+app = "features/support/app/monefy-app-lite-1-14-0.apk"
 
 autoGrantPermissions = true
 newCommandTimeout = 99999
