@@ -8,6 +8,6 @@ autoGrantPermissions = true
 newCommandTimeout = 99999
 adbExecTimeout = 99999
 
-fullReset = true
+noReset = false
 
 appWaitForLaunch = true
