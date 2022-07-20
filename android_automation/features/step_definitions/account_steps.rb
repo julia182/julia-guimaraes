@@ -17,3 +17,23 @@ Then "only the account selected is shown" do
   menu = SidebarMenuScreen.new
   menu.payment_card_text.displayed?
 end
+
+When "clicks on config button" do
+  config_menu = ConfigMenuScreen.new
+  config_menu.config_menu_button.click
+end
+
+And "clicks add account" do
+  config_menu = ConfigMenuScreen.new
+  config_menu.accounts_button.click
+end
+
+And "chooses account name and type" do
+  config_menu = ConfigMenuScreen.new
+  config_menu.add_account
+end
+
+Then "the account is created" do
+  ba = BalanceScreen.new
+  ba.validate_created_account
+end

@@ -27,7 +27,7 @@ module BalanceModule
     formatted_value = format_value value
     expected_message = /#{category}: .*#{formatted_value}.* added/
 
-    msg_gotten = balance_change_message.text
+    msg_gotten = snackbar_message.text
 
     raise "Message gotten is different than expected.\nGotten: #{msg_gotten}\nExpected: #{expected_message}" unless msg_gotten.match? expected_message
   end
@@ -55,5 +55,11 @@ module BalanceModule
     balance_details_categories_names.each do |b|
       raise "Balance categories don't match" unless ['Bills', 'Salary'].include? b.text
     end
+  end
+
+  def validate_created_account
+    msg_gotten = snackbar_message.text
+    expected_message = 'New account was added'
+    raise "Message gotten is different than expected.\nGotten: #{msg_gotten}\nExpected: #{expected_message}" unless msg_gotten.match? expected_message
   end
 end

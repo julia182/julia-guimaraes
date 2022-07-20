@@ -25,7 +25,12 @@ Feature: Balance
     Then a text is shown with the added value
     And the balance amount is updated with the "income"
 
-  Scenario: See balance details
+  Scenario: View balance details
     And has balance history
     When clicks on balance button
     Then the balance details are displayed
+
+  Scenario: Change currency
+    And clicks on config button
+    When clicks on currencies button
+    Then a screen to buy Monefy Pro is shown

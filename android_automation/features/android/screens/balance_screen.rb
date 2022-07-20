@@ -30,7 +30,7 @@ class BalanceScreen < TestHelpers
   end
 
   #EditText
-  def balance_change_message
+  def snackbar_message
     driver.find_element(:id, 'com.monefy.app.lite:id/snackbar_text')
   end
 

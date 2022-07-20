@@ -2,6 +2,7 @@ require 'appium_lib'
 require 'appium_console'
 require 'pry'
 require_relative '../../features/modules/balance_module'
+require_relative '../../features/modules/config_menu_module'
 require_relative '../../features/support/helpers'
 #require 'faker'
 

@@ -67,3 +67,13 @@ Then "the balance details are displayed" do
   ba = BalanceScreen.new
   ba.validate_balance_details [$salary_value, $bill_value]
 end
+
+When "clicks on currencies button" do
+  menu = ConfigMenuScreen.new
+  menu.currencies_button.click
+end
+
+Then "a screen to buy Monefy Pro is shown" do
+  menu = ConfigMenuScreen.new
+  menu.validate_buy_monefy
+end
