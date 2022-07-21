@@ -1,0 +1,7 @@
+report: --format pretty --format html --out reports/report.html --color
+
+high_priority: -t @high_priority --format pretty --format html --out reports/report_high_priority.html --color
+
+medium_priority: -t @medium_priority --format pretty --format html --out reports/report_medium_priority.html --color
+
+low_priority: -t @low_priority --format pretty --format html --out reports/report_low_priority.html --color
