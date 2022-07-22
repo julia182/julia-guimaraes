@@ -1,7 +1,9 @@
-report: --format pretty --format html --out reports/report.html --color
+default: --publish-quiet
 
-high_priority: -t @high_priority --format pretty --format html --out reports/report_high_priority.html --color
+report: --format pretty --format html --out reports/report.html --color --publish-quiet
 
-medium_priority: -t @medium_priority --format pretty --format html --out reports/report_medium_priority.html --color
+high_priority: -t @high_priority --format pretty --format html --out reports/report_high_priority.html --color --publish-quiet
 
-low_priority: -t @low_priority --format pretty --format html --out reports/report_low_priority.html --color
+medium_priority: -t @medium_priority --format pretty --format html --out reports/report_medium_priority.html --color --publish-quiet
+
+low_priority: -t @low_priority --format pretty --format html --out reports/report_low_priority.html --color --publish-quiet
